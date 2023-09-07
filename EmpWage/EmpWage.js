@@ -29,3 +29,22 @@ switch(empcheck)
 }
 let empwage= emphrs*WAGE_PER_HR;
 console.log("EmpWage is "+empwage);
+
+
+function getworkinghrs()                        //UC-3
+{
+    switch(empcheck)
+    {
+    case IS_PART_TIME: 
+        return PART_TIME_HR;
+        break;
+    case IS_FULL_TIME: return Full_TIME_HR;
+    break;
+    case IS_AbBSENT: return IS_AbBSENT 
+    }
+}
+let totalemphrs=0;
+empcheck=Math.floor(Math.random()*10)%3;
+totalemphrs=getworkinghrs(empcheck);
+let totalempwage=emphrs*WAGE_PER_HR;
+console.log("working hrs of totalEmpWages is "+totalempwage);
