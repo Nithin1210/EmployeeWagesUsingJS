@@ -4,6 +4,7 @@ const IS_FULL_TIME=2;
 const PART_TIME_HR=4;
 const Full_TIME_HR=8;
 const WAGE_PER_HR=20;
+const NUM_OF_WORKING_DAYS=20;
 
 
 let empcheck = Math.floor(Math.random()*10)%2;  //UC-1
@@ -48,3 +49,13 @@ empcheck=Math.floor(Math.random()*10)%3;
 totalemphrs=getworkinghrs(empcheck);
 let totalempwage=emphrs*WAGE_PER_HR;
 console.log("working hrs of totalEmpWages is "+totalempwage);
+
+
+let  hrs=0;                                     //UC-4
+for(let i=0;i<NUM_OF_WORKING_DAYS;i++)
+{
+    empcheck=Math.floor(Math.random()*10)%3;
+    hrs+=getworkinghrs(empcheck);
+}
+totalempwage=hrs*WAGE_PER_HR;
+console.log("Wage for a month is "+totalempwage);
