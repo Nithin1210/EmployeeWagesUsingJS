@@ -129,3 +129,4 @@ function totolDayWorked(numOfDays, dailyWage) {
     return numOfDays;
 }
 console.log("uc7-g ="+DailyWageArray.reduce(totolDayWorked, 0));
+;
