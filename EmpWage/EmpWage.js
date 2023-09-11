@@ -87,7 +87,6 @@ console.log("Total working days is :" + totalWorkingDay + " Total Hours : " + To
 console.log(DailyWageArray)
 
 //UC7                                           //UC7
-
 //A
 totalempwage = 0;
 function sum(dailyWage) {
@@ -95,7 +94,6 @@ function sum(dailyWage) {
 }
 DailyWageArray.forEach(sum);
 console.log(totalempwage);
-
 //B
 let dayCount = 0;
 function mapDayWithWage(dailyWage) {
@@ -104,26 +102,21 @@ function mapDayWithWage(dailyWage) {
 }
 let mapWithDayArray = DailyWageArray.map(mapDayWithWage);
 console.log(DailyWageArray);
-
 //C
 function fullTimeWage(dailyWage) {
     return dailyWage.includes("160");
 }
 let fullTimeWageArr = mapWithDayArray.filter(fullTimeWage);
 console.log(fullTimeWageArr);
-
 //D
 console.log(mapWithDayArray.find(fullTimeWage));
-
 //E
 console.log(fullTimeWageArr.every(fullTimeWage));
-
 //f
 function partTimeWage(dailyWage) {
     return dailyWage.includes("80");
 }
 console.log(mapWithDayArray.some(partTimeWage));
-
 //G
 function totolDayWorked(numOfDays, dailyWage) {
     if (dailyWage > 0) {
