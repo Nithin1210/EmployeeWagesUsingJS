@@ -131,4 +131,4 @@ function totolDayWorked(numOfDays, dailyWage) {
     }
     return numOfDays;
 }
-console.log(DailyWageArray.reduce(totolDayWorked, 0));
+console.log("uc7="+DailyWageArray.reduce(totolDayWorked, 0));
