@@ -86,6 +86,10 @@ let empWage1 = CalculateDailyWage(TotalEmphrs);
 console.log("Total working days is :" + totalWorkingDay + " Total Hours : " + TotalEmphrs + " Emp Wages " + empWage1);
 console.log(DailyWageArray)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> uc7-ArrayFunInDailyWages
 //UC7                                           //UC7
 //A
 totalempwage = 0;
